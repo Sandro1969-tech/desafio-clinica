@@ -1,0 +1,165 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cores */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0d6efd;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffc107;
+}
+
+/* Hero */
+.hero {
+  background: url('banner.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.btn {
+  background: #ffc107;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #ff9800;
+}
+
+/* Sobre */
+.sobre {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sobre .imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sobre img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sobre img:hover {
+  transform: scale(1.05);
+}
+
+/* Serviços */
+.servicos {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicos ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.servicos ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background: #0d6efd;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer .social a {
+  margin: 0 10px;
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer .copy {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
